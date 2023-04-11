@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Nunito&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#login-page {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: rgb(19, 120, 243);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+}
+#login-card {
+  padding: 50px;
+  border: none;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+#login-card h2 {
+  margin: auto;
+  font-size: 2rem;
+}
+#login-btn-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#login-btn-group button {
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 1.2rem;
+  margin: 5px;
+  color: white;
+}
+.googlebtn {
+  background-color: rgb(19, 120, 243);
+}
+.facebookbtn {
+  background-color: blue;
+}
+#login-btn-group button svg {
+  border: 2px solid white;
+  padding: 4px;
+  margin: 3px;
+  font-size: 2rem;
+  border-radius: 50%;
+}
+#chats-page {
+  font-family: "Noto Sans", sans-serif;
+}
+#chat-header {
+  display: flex;
+  padding: 10px;
+  width: 100vw;
+  background-color: blue;
+  height: 66px;
+  align-items: center;
+  justify-content: space-between;
+  color: aliceblue;
+}
+#chat-header #logo {
+  font-weight: 900;
+  font-size: 2rem;
+}
+#chat-header #logout #logoutBtn {
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  #login-card {
+    padding: 10px;
+  }
+  #login-card h2 {
+    font-size: 1.5rem;
+  }
+  #login-btn-group button {
+    font-size: 1rem;
+  }
+  #login-btn-group button svg {
+    font-size: 1.2rem;
+    padding: 1px;
+  }
+}
